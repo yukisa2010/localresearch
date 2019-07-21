@@ -21,7 +21,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin:0 auto;
+  margin:0 auto 200px;
 }
 
 .giftItem img {
@@ -45,7 +45,7 @@ h1 {
 
 .questions {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 200px;
   font-size: 20px;
 }
 
