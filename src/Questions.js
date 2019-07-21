@@ -19,14 +19,14 @@ const Questions = props => {
       <tr>
         <td>
           <p>{questionItem[0]}</p>
-          <div className='answers'>
+          <div className='answers lowheight'>
             <label><input type="radio" name={group[0]} />はい</label><br/>
             <label><input type="radio" name={group[0]} />いいえ</label>
           </div>
         </td>
         <td>
           <p>{questionItem[1]}</p>
-          <div className='answers'>
+          <div className='answers lowheight'>
             <label><input type="radio" name={group[1]} />はい</label><br/>
             <label><input type="radio" name={group[1]} />いいえ</label>
           </div>
@@ -35,14 +35,14 @@ const Questions = props => {
       <tr>
         <td>
           <p>{questionItem[2]}</p>
-          <div className='answers'>
+          <div className='answers lowheight'>
             <label><input type="radio" name={group[2]} />はい</label><br/>
             <label><input type="radio" name={group[2]} />いいえ</label>
           </div>
         </td>
         <td>
           <p>{questionItem[3]}</p>
-          <div className='answers'>
+          <div className='answers lowheight'>
             <label><input type="radio" name={group[3]} />はい</label><br/>
             <label><input type="radio" name={group[3]} />いいえ</label>
           </div>

@@ -76,6 +76,10 @@ h1 {
   font-size: 22px;
 }
 
+.lowheight {
+  height: 50px;
+}
+
 .forminfo {
   text-align: left;
   width: 95%;
