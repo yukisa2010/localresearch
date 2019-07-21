@@ -44,7 +44,7 @@ const FormInfo = () => {
         <label>お名前<input type="text" placeholder='お名前を入力してください' /></label>
       </div><br/>
       <div className="birth">
-        <label>お誕生日 </label>
+        <label>生年月日</label>
           <div className="birthday">
             <select>{years}</select>
             <span>年</span>
@@ -61,7 +61,7 @@ const FormInfo = () => {
       <div className="address">
         <label>住所</label>
         <input type="text" placeholder='住所' id='address'/>
-        <label>郵便番号入力で自動入力されます</label>
+        <label className='autoinput'>郵便番号入力で自動入力されます</label>
         <input type="text" placeholder='番地・ビル名'/>
         <label>マンション名は必ず記入してください。</label>
       </div><br/>
