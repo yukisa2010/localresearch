@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TableComponent from "./TableComponent.js";
+import Questions from "./Questions.js";
+import FormInfo from "./FormInfo.js";
+import Attention from "./Attention";
+import { Link } from 'react-router-dom';
 
-function App() {
-  return (
+
+import './App.css';
+import firebase from './firebase'
+
+const dbRef = firebase.database().ref();
+console.log(dbRef);
+
+
+const App = () => (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src="../img/980px_01.jpg" alt="howto" width="100%" />
+      <TableComponent />
+      <h2>アンケートでプレゼント</h2>
+      <Questions />
+      <h2>発送情報</h2>
+      <FormInfo />
+      <Attention />
+      <Link to='/thanks' ><button id='registerbtn'>登録</button></Link>
     </div>
-  );
-}
+);
+
 
 export default App;

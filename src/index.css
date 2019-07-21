@@ -11,3 +11,153 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.giftItems {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.giftItem img {
+  width: 100%;
+}
+
+.giftItem {
+  position: relative;
+  /* flex-basis: 25%; */
+  width: 33%;
+}
+
+.giftItem label {
+  position: absolute;
+  color: #fff;
+  bottom: 30px;
+  right: 50%;
+  font-size: 19px;
+}
+
+.questions {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.questions p {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.answers {
+  width: 600px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.answers label{
+  margin-left: 200px;
+}
+
+.forminfo {
+  text-align: left;
+  width: 700px;
+  margin: 0 auto;
+}
+
+input[type='text'] {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+select {
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.phone {
+  margin-bottom: 15px;
+}
+
+
+.person-name {
+  width: 300px;
+}
+
+
+.attention {
+  width: 800px;
+  margin:0 auto;
+  text-align: left;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+}
+
+#registerbtn {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 5px 0 #000;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:active {
+  box-shadow: none !important;
+  position: relative;
+  top: 5px;
+}
+
+.thanks {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.thanks button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+}
+
+.thanks p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.thanks p:first-child {
+  width: 300px;
+  height: 40px;
+  padding-top: 20px;
+  color: #fff;
+  background-color: orange;
+  box-shadow: 0 5px 0 orangered;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.thanks #addbtn {
+  background-color: navy;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.thanks #backbtn {
+  background-color: skyblue;
+  color: #fff;
+}
