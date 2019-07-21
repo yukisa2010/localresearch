@@ -34,6 +34,7 @@ code {
   bottom: 30px;
   right: 50%;
   font-size: 19px;
+  user-select: none;
 }
 
 .questions {
@@ -42,9 +43,6 @@ code {
   font-size: 20px;
 }
 
-.questions td {
-  
-}
 
 .questions p {
   font-weight: bold;
@@ -63,6 +61,7 @@ code {
 
 .answers label{
   margin-left: 20px;
+  user-select: none;
 }
 
 .forminfo {
