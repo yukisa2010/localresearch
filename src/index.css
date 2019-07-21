@@ -42,19 +42,27 @@ code {
   font-size: 20px;
 }
 
+.questions td {
+  
+}
+
 .questions p {
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: block;
+  padding-left: 30px;
 }
 
 .answers {
-  width: 600px;
+  width: 100%;
   text-align: left;
   margin-bottom: 50px;
+  padding-left: 30px;
 }
 
 .answers label{
-  margin-left: 200px;
+  margin-left: 20px;
 }
 
 .forminfo {
