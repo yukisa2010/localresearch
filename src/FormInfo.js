@@ -35,46 +35,45 @@ const FormInfo = () => {
       document.getElementById('address').value = json.data.fullAddress
     })
   }
-  
 
 
   return (
     <div className="forminfo">
       <div className="person-name">
-        <label>お名前<input type="text" placeholder='お名前を入力してください' /></label>
+        <label>お名前<input type="text" placeholder='お名前を入力してください' name='名前'/></label>
       </div><br/>
       <div className="birth">
         <label>生年月日</label>
           <div className="birthday">
-            <select>{years}</select>
+            <select name='year'>{years}</select>
             <span>年</span>
-            <select>{months}</select>
+            <select name='month'>{months}</select>
             <span>月</span>
-            <select>{days}</select>
+            <select name='day'>{days}</select>
             <span>日</span><br/>     
           </div>
       </div>
       <div className="post-number">
         <label>郵便番号</label>
-        <input type="text" placeholder='1030005' id='zip' onChange={() => zipResponse()} />
+        <input type="text" placeholder='1030005' id='zip' name='zip' onChange={() => zipResponse()} />
       </div><br/>
       <div className="address">
         <label>住所</label>
-        <input type="text" placeholder='住所' id='address'/>
+        <input type="text" placeholder='住所' id='address' name='address1' />
         <label className='autoinput'>郵便番号入力で自動入力されます</label>
-        <input type="text" placeholder='番地・ビル名'/>
+        <input type="text" placeholder='番地・ビル名' name='address2' />
         <label>マンション名は必ず記入してください。</label>
       </div><br/>
       <div className="tel-number">
         <label>電話番号（ハイフンなし）</label>
-        <input type="text" placeholder='09000000000'/>
+        <input type="text" placeholder='09000000000' name='telnumber'/>
       </div><br/>
       <div className="phone">        
         <label><input type="radio" name="tel" value="自宅" />自宅</label>
         <label><input type="radio" name="tel" value="携帯" />携帯</label>
       </div>
       <div className="company">
-        <label>勤務先名<input type="text" placeholder='勤務先を入力してください'/></label>        
+        <label>勤務先名<input type="text" placeholder='勤務先を入力してください' name='company' /></label>        
       </div>
     </div>
   );

@@ -230,10 +230,11 @@ button:active {
   height: 20px;
 }
 
-#comment {
+.memo textarea {
   width: 95%;
   height: 200px;
   margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .memo button {
