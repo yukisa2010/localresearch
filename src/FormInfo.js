@@ -37,6 +37,7 @@ const FormInfo = () => {
   }
   
 
+
   return (
     <div className="forminfo">
       <div className="person-name">
@@ -69,8 +70,8 @@ const FormInfo = () => {
         <input type="text" placeholder='09000000000'/>
       </div><br/>
       <div className="phone">        
-        <label><input type="radio" name="tel" />自宅</label>
-        <label><input type="radio" name="tel" />携帯</label>
+        <label><input type="radio" name="tel" value="自宅" />自宅</label>
+        <label><input type="radio" name="tel" value="携帯" />携帯</label>
       </div>
       <div className="company">
         <label>勤務先名<input type="text" placeholder='勤務先を入力してください'/></label>        

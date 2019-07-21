@@ -12,6 +12,15 @@ import firebase from './firebase'
 const dbRef = firebase.database().ref();
 console.log(dbRef);
 
+function getItems() {
+  let tel = document.getElementsByName('tel')
+  for (let i=0;i<tel.length;i++){
+    if(tel[i].checked===true){
+      console.log(tel[i].value)
+    }
+  }
+}
+
 
 const App = () => (
     <div className="App">
@@ -22,7 +31,7 @@ const App = () => (
       <h2>発送情報</h2>
       <FormInfo />
       <Attention />
-      <Link to='/thanks' ><button id='registerbtn'>登録</button></Link>
+      <Link to='/thanks' ><button id='registerbtn' onClick={()=>getItems()}>登録</button></Link>
     </div>
 );
 
