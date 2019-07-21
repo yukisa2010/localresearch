@@ -1,5 +1,6 @@
 import React from 'react'
 import firebase from './firebase'
+import {Link} from 'react-router-dom'
 
 const dbRef = firebase.database().ref();
 
@@ -38,6 +39,7 @@ const Memo = () => {
           <label>コメント<br/><textarea id='comment' ></textarea></label><br/>
         </form>
         <button onClick={() => getlocalStorage()}>登録</button>
+        <Link to='/' style={{ textDecoration: 'none'}}><button>JSONダウンロード</button></Link>
       </div>
     </div>
   )
