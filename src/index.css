@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+h1 {
+  color: red;
+  font-size: 35px;
+}
+
 .giftItems {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +56,7 @@ code {
   text-align: left;
   display: block;
   padding-left: 30px;
+  font-size: 30px;
 }
 
 .answers {
@@ -58,11 +64,15 @@ code {
   text-align: left;
   margin-bottom: 50px;
   padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .answers label{
   margin-left: 20px;
   user-select: none;
+  width: 200px;
+  font-size: 25px;
 }
 
 .forminfo {
@@ -110,6 +120,7 @@ select {
 h2 {
   color: red;
   text-align: center;
+  font-size: 30px;
 }
 
 #registerbtn {
