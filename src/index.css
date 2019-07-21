@@ -68,7 +68,7 @@ code {
 .forminfo {
   text-align: left;
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 70px;
 }
 
 .forminfo label {
@@ -96,8 +96,15 @@ select {
 
 .attention {
   width: 90%;
-  margin:0 auto;
+  font-size: 23px;
+  line-height: 30px;
+  margin:0 auto 70px;
   text-align: left;
+}
+
+.attention h2 {
+  display: block;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -108,12 +115,14 @@ h2 {
 #registerbtn {
   background-color: blue;
   color: #fff;
+  font-size: 20px;
   border: none;
-  width: 200px;
+  width: 80%;
   height: 50px;
   border-radius: 5px;
   box-shadow: 0 5px 0 #000;
   margin-bottom: 30px;
+  
 }
 
 button:hover {
