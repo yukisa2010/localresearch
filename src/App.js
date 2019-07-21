@@ -7,10 +7,6 @@ import { Link } from 'react-router-dom';
 
 
 import './App.css';
-import firebase from './firebase'
-
-const dbRef = firebase.database().ref();
-console.log(dbRef);
 
 //バリデーションチェック入れたい
 

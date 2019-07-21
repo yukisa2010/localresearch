@@ -1,4 +1,7 @@
 import React from 'react'
+import firebase from './firebase'
+
+const dbRef = firebase.database().ref();
 
 const Memo = () => {
 
@@ -14,6 +17,8 @@ const Memo = () => {
     objData.area = area
     objData.comment = comment
 
+    dbRef.child(objData.id).set(objData)
+
     var newJSON = JSON.stringify(objData)
     console.log(newJSON)
   }
@@ -24,9 +29,9 @@ const Memo = () => {
         <p>追加記入欄</p>
         <label>担当者</label><br/>
         <select id='staff'>
-          <option selected>名前を選択してください</option>
-          <option>社員001</option>
-          <option>ゲスト001</option>
+          <option value='' selected>名前を選択してください</option>
+          <option value='社員001'>社員001</option>
+          <option value='ゲスト001'>ゲスト001</option>
         </select><br/>
         <label>エリア<br/><input type='text' id='area' /></label><br/>
         <form>
