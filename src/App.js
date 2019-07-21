@@ -13,13 +13,23 @@ const dbRef = firebase.database().ref();
 console.log(dbRef);
 
 function getItems() {
+  var selectedItem = getSelected('tel')
+  console.log(selectedItem)
+}
+
+function getSelected(item){
   //電話番号
-  let tel = document.getElementsByName('tel')
+  let tel = document.getElementsByName(item)
   for (let i=0;i<tel.length;i++){
+
     if(tel[i].checked===true){
-      console.log(tel[i].value)
+      console.log(tel[i].value) 
+
+      return tel[i].value
     }
   }
+
+    
 }
 
 
