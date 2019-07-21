@@ -6,7 +6,7 @@ const FormInfo = () => {
   let days = [];
 
   years.push(<option selected>--</option>);
-  for (let i = 1950; i < 2020; i++) {
+  for (let i = 1970; i < 2000; i++) {
     years.push(<option>{i}</option>);
   }
   months.push(<option selected>--</option>);
