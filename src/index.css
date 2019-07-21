@@ -66,14 +66,19 @@ code {
 
 .forminfo {
   text-align: left;
-  width: 700px;
+  width: 95%;
   margin: 0 auto;
+}
+
+.forminfo label {
+  font-size: 25px;
 }
 
 input[type='text'] {
   height: 50px;
   width: 100%;
   border-radius: 5px;
+  font-size: 25px;
 }
 
 select {
@@ -87,14 +92,8 @@ select {
   margin-bottom: 15px;
 }
 
-
-.person-name {
-  width: 300px;
-}
-
-
 .attention {
-  width: 800px;
+  width: 90%;
   margin:0 auto;
   text-align: left;
 }

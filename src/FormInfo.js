@@ -54,7 +54,7 @@ const FormInfo = () => {
           </div>
       </div>
       <div className="post-number">
-        <span>郵便番号</span>
+        <label>郵便番号</label>
         <input type="text" placeholder='1030005' id='zip' onChange={() => zipResponse()} />
       </div><br/>
       <div className="address">
