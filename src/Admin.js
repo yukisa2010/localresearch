@@ -4,7 +4,14 @@ import firebase from './firebase'
 const dbRef = firebase.database().ref();
 dbRef.on('value', snapshot => {
   const admin = document.getElementById('admin')
-  admin.innerHTML = JSON.stringify(snapshot.val())
+
+  if (snapshot.val() !== null){
+    admin.innerText = JSON.stringify(snapshot.val())
+    return
+
+  } else {
+    return
+  }
 });
 
 
