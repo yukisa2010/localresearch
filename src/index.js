@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import Thanks from './Thanks';
 import Memo from './Memo';
-import Admin from './Admin'
+import Complete from './Complete'
 
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 
 
 ReactDOM.render(
@@ -16,7 +16,11 @@ ReactDOM.render(
     <Route exact path='/' component={App}/>
     <Route path="/thanks" component={Thanks} />
     <Route path="/memo" component={Memo} />
-    <Route path="/admin" component={Admin} />
+    <Route 
+      path="/complete" 
+      component={Complete}
+    />
+    <Redirect from='/complete' to='/'/>
   </div>
 </BrowserRouter>
 

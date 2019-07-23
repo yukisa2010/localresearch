@@ -7,7 +7,7 @@ const dbRef = firebase.database().ref();
 const Memo = () => {
 
   function updateRealtimeDatabase(){
-    var answer = confirm('データを登録します。よろしいですか？');
+    var answer = window.confirm('データを登録します。よろしいですか？');
     if(answer === false){
       return;
     }
@@ -29,7 +29,7 @@ const Memo = () => {
     var newJSON = JSON.stringify(objData)
     console.log(newJSON)
 
-    window.location.href = '/';
+    window.location.href = '/complete';
   }
 
   function getDateString(){
