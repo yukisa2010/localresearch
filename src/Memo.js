@@ -12,17 +12,32 @@ const Memo = () => {
     var staff = document.getElementById('staff').value
     var area = document.getElementById('area').value
     var comment = document.getElementById('comment').value
+    var timeStamp = getDateString()
 
     var objData = JSON.parse(jsonData)
     objData['担当者'] = staff
     objData['エリア'] = area
     objData['備考'] = comment
+    objData['最終更新日時'] = timeStamp
 
     dbRef.child(objData.id).set(objData)
 
     var newJSON = JSON.stringify(objData)
     console.log(newJSON)
   }
+
+  function getDateString(){
+    var date = new Date()
+    var format_str = 'YYYY-MM-DD hh:mm:ss';
+    format_str = format_str.replace(/YYYY/g, date.getFullYear());
+    format_str = format_str.replace(/MM/g, date.getMonth());
+    format_str = format_str.replace(/DD/g, date.getDate());
+    format_str = format_str.replace(/hh/g, date.getHours());
+    format_str = format_str.replace(/mm/g, date.getMinutes());
+    format_str = format_str.replace(/ss/g, date.getSeconds());
+    return format_str
+  }
+  
   
   return(
     <div className='memo-wrapper'>
