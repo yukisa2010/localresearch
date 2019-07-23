@@ -6,7 +6,11 @@ const dbRef = firebase.database().ref();
 
 const Memo = () => {
 
-  function getlocalStorage(){
+  function updateRealtimeDatabase(){
+    var answer = confirm('データを登録します。よろしいですか？');
+    if(answer === false){
+      return;
+    }
 
     var jsonData = localStorage.getItem('temp')
     var staff = document.getElementById('staff').value
@@ -14,7 +18,7 @@ const Memo = () => {
     var comment = document.getElementById('comment').value
     var timeStamp = getDateString()
 
-    var objData = JSON.parse(jsonData)
+    var objData = JSON.parse(jsonData) 
     objData['担当者'] = staff
     objData['エリア'] = area
     objData['備考'] = comment
@@ -24,6 +28,8 @@ const Memo = () => {
 
     var newJSON = JSON.stringify(objData)
     console.log(newJSON)
+
+    window.location.href = '/';
   }
 
   function getDateString(){
@@ -53,7 +59,7 @@ const Memo = () => {
         <form>
           <label>コメント<br/><textarea id='comment' ></textarea></label><br/>
         </form>
-        <button onClick={() => getlocalStorage()}>登録</button>
+        <button onClick={() => updateRealtimeDatabase()}>登録</button>
         <Link to='/' style={{ textDecoration: 'none'}}><button>JSONダウンロード</button></Link>
       </div>
     </div>
