@@ -14,9 +14,9 @@ const Memo = () => {
     var comment = document.getElementById('comment').value
 
     var objData = JSON.parse(jsonData)
-    objData.staff = staff
-    objData.area = area
-    objData.comment = comment
+    objData['担当者'] = staff
+    objData['エリア'] = area
+    objData['備考'] = comment
 
     dbRef.child(objData.id).set(objData)
 

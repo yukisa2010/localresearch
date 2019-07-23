@@ -8,12 +8,23 @@ dbRef.on(
   snapshot => {
   //firebaseから取得した値をJSONにする
   const obj = JSON.stringify(snapshot.val());
+  console.log(obj)
   //JSONを取得できるようにBLOBに加工する
   const jsonfile = new Blob([JSON.stringify(obj, null, '  ')], {type: 'application/json'});
+  console.log(jsonfile)
   //JSONをダウンロードできるURLを生成
   const url = URL.createObjectURL(jsonfile)
+  console.log(url)
+
   //URLをaタグへと紐づける
-  document.getElementById('download').href = url
+  document.getElementsByTagName('a')[0].href = url
+
+  const reader = new FileReader();
+  reader.onload = function() {
+    console.log(reader.result, 'reader')
+  }
+  reader.readAsText(jsonfile)
+
   }
   )
 

@@ -40,7 +40,7 @@ const FormInfo = () => {
   return (
     <div className="forminfo">
       <div className="person-name">
-        <label>お名前<input type="text" placeholder='お名前を入力してください' name='名前'/></label>
+        <label>お名前<input type="text" placeholder='お名前を入力してください' name='name'/></label>
       </div><br/>
       <div className="birth">
         <label>生年月日</label>

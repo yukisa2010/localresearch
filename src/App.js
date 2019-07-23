@@ -21,7 +21,7 @@ function getItems() {
   var a_6 = getSelected('a6')
   var a_7 = getSelected('a7')
   var a_8 = getSelected('a8')
-  var name = getValue('名前')
+  var name = getValue('name')
   var year = getValue('year')
   var month = getValue('month')
   var day = getValue('day')
@@ -33,7 +33,7 @@ function getItems() {
   var company = getValue('company')
   var dataObj = {
     id: uniquekey,
-    gift: gift,
+    景品: gift,
     年金不安: a_1,
     年金対策: a_2,
     運用興味: a_3,
@@ -50,7 +50,7 @@ function getItems() {
     住所1: address1,
     住所2: address2,
     電話:tel,
-    電場番号:telnumber,
+    電話番号:telnumber,
     会社: company 
   }
   var dataJSON = JSON.stringify(dataObj)
