@@ -16,11 +16,6 @@ ReactDOM.render(
     <Route exact path='/' component={App}/>
     <Route path="/thanks" component={Thanks} />
     <Route path="/memo" component={Memo} />
-    <Route 
-      path="/complete" 
-      component={Complete}
-    />
-    <Redirect from='/complete' to='/'/>
   </div>
 </BrowserRouter>
 
