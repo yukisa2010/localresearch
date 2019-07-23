@@ -29,6 +29,7 @@ const Memo = () => {
     var newJSON = JSON.stringify(objData)
     console.log(newJSON)
 
+    alert('登録しました')
     window.location.href = '/complete';
   }
 
