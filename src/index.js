@@ -4,10 +4,9 @@ import './index.css';
 import App from './App';
 import Thanks from './Thanks';
 import Memo from './Memo';
-import Complete from './Complete'
 
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 
 ReactDOM.render(
