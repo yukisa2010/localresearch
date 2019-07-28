@@ -103,7 +103,8 @@ h1 {
   color: #000;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='tel'] {
   height: 50px;
   width: 100%;
   border-radius: 5px;
