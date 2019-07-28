@@ -100,7 +100,7 @@ h1 {
 }
 
 .address label:first-child {
-  color: #000;
+  color: #000; 
 }
 
 input[type='text'],
