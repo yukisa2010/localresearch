@@ -2,8 +2,8 @@ import React from "react";
 
 const GiftItem = props => (
   <div className="giftItem">
-    <img src="../img/166415_3.jpg" alt="test" />
-    <label><input type="radio" name="gift" value={props.flag} />牛丼</label>
+    <img src={props.url} alt="test" />
+    <label style={{ color: props.labelcolor }}><input type="radio" name="gift" value={props.flag} />{props.flag}</label>
   </div>
 );
 

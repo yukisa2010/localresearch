@@ -36,11 +36,15 @@ h1 {
 
 .giftItem label {
   position: absolute;
-  color: #fff;
+  color: #000;
   bottom: 30px;
-  right: 50%;
+  right: 30%;
   font-size: 19px;
   user-select: none;
+}
+
+.white {
+  color: #fff;
 }
 
 .questions {
