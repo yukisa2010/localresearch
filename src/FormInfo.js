@@ -66,7 +66,7 @@ const FormInfo = () => {
       </div><br/>
       <div className="tel-number">
         <label>電話番号（ハイフンなし）</label>
-        <input type="text" placeholder='09000000000' name='telnumber'/>
+        <input type="tel" placeholder='09000000000' name='telnumber'/>
       </div><br/>
       <div className="phone">        
         <label><input type="radio" name="tel" value="自宅" />自宅</label>
