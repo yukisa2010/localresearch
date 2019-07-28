@@ -38,7 +38,7 @@ h1 {
   position: absolute;
   color: #000;
   bottom: 30px;
-  right: 30%;
+  left: 70px;
   font-size: 19px;
   user-select: none;
 }
