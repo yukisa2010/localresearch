@@ -30,7 +30,7 @@ const Memo = () => {
     console.log(newJSON)
 
     alert('登録しました')
-    window.location.href = '/';
+    window.location.href = '/App';
   }
 
   function getDateString(){
