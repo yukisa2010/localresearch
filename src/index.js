@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Thanks from './Thanks';
 import Memo from './Memo';
+import View from './View'
 
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ ReactDOM.render(
 <BrowserRouter>
   <div>
     <Route exact path='/' component={App}/>
+    <Route path="/view" component={View} />
     <Route path="/thanks" component={Thanks} />
     <Route path="/memo" component={Memo} />
   </div>
