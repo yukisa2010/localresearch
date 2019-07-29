@@ -111,6 +111,11 @@ input[type='tel'] {
   font-size: 25px;
 }
 
+#area {
+  height: 100px;
+  font-size: 20px;
+}
+
 select {
   height: 50px;
   width: 100px;
