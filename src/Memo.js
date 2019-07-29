@@ -24,7 +24,8 @@ const Memo = () => {
     objData['備考'] = comment
     objData['最終更新日時'] = timeStamp
 
-    dbRef.child(objData.id).set(objData)
+    dbRef.child(objData.id).set(objData);
+    localStorage.clear();  
 
     var newJSON = JSON.stringify(objData)
     console.log(newJSON)
