@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+button#app,
+button#view {
+
+  width: 200px;
+  height: 30px;
+}
+
 h1 {
   color: red;
   font-size: 35px;

@@ -30,14 +30,14 @@ const Memo = () => {
     console.log(newJSON)
 
     alert('登録しました')
-    window.location.href = '/App';
+    window.location.href = '/';
   }
 
   function getDateString(){
     var date = new Date()
     var format_str = 'YYYY-MM-DD hh:mm:ss';
     format_str = format_str.replace(/YYYY/g, date.getFullYear());
-    format_str = format_str.replace(/MM/g, date.getMonth());
+    format_str = format_str.replace(/MM/g, date.getMonth() + 1);
     format_str = format_str.replace(/DD/g, date.getDate());
     format_str = format_str.replace(/hh/g, date.getHours());
     format_str = format_str.replace(/mm/g, date.getMinutes());
