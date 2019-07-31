@@ -262,3 +262,16 @@ button:active {
   color: #fff;
 }
 
+#data table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#data table th {
+  background-color: yellow;
+}
+
+#data table th,
+#data table td {
+  border:1px solid #000;
+}
