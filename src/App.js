@@ -10,6 +10,7 @@ import './App.css';
 
 //バリデーションチェック入れたい
 
+
 function getItems() {
   var uniquekey = getRandomId()
   var gift = getSelected('gift')
@@ -88,7 +89,9 @@ function getRandomId(){
   return r
 }
 
-const App = () => (
+const App = () => {
+  
+  return (
     <div className="App">
       <h1>アンケートでプレゼント</h1>
       <TableComponent />
@@ -102,7 +105,8 @@ const App = () => (
         </button>
       </Link>
     </div>
-);
+)
+}
 
 
 export default App;

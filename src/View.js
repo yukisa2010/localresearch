@@ -5,7 +5,7 @@ import firebase from './firebase';
 
 const View = () => {
   const dbRef = firebase.database().ref();
-  const headerArr = ["id", "名前", "年","月", "日", "郵便番号", "住所1", "住所2", "備考",   "担当者", "景品", "最終更新日時","電話",  "電話番号", "会社","エリア"]
+  const headerArr = ["id", "名前", "年","月", "日", "郵便番号", "住所1", "住所2", "担当者", "景品", "最終更新日時","電話",  "電話番号", "会社","エリア",  "備考"]
   const header = <tr>{headerArr.map(head => <th>{head}</th>)}</tr>
   let recordItems = []
   let entireTable  
