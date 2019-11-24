@@ -9,8 +9,8 @@ const TableComponent = () => {
     'MacBook Air -Apple',
     'ザ・プレミアム・モルツ',
     'ルンバ i7+',
-    'オートバックス商品券 2万円',
-    'イエローハット商品券 2万円',
+    'エピック ドライバー',
+    'JCBギフトカード 3万円分',
     'QUOカード500円'
   ];
 
@@ -19,7 +19,7 @@ const TableComponent = () => {
     './img/premium-malts_01.png',
     './img/rumba_01.png',
     './img/driver_01.jpg',
-    './img/gift30_01.png',
+    './img/jcb30.jpg',
     './img/quo-card_01.jpg'
   ];
 

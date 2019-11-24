@@ -53,8 +53,9 @@ const Memo = () => {
         <label>担当者</label><br/>
         <select id='staff'>
           <option value='' selected>名前を選択してください</option>
+          <option value='白木'>白木</option>
           <option value='社員001'>社員001</option>
-          <option value='ゲスト001'>ゲスト001</option>
+          <option value='社員002'>社員002</option>
         </select><br/>
         <label>エリア<br/><input type='text' id='area' /></label><br/>
         <form>
