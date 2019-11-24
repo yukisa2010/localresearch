@@ -155,14 +155,14 @@ h2 {
 }
 
 #registerbtn {
-  background-color: blue;
+  background-color: #004fb3;
   color: #fff;
   font-size: 20px;
   border: none;
   width: 80%;
-  height: 50px;
-  border-radius: 5px;
-  box-shadow: 0 5px 0 #000;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 #030a40;
   margin-bottom: 30px;
   
 }
