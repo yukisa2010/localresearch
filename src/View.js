@@ -4,6 +4,8 @@ import firebase from './firebase';
 
 
 const View = () => {
+  const password = window.prompt("パスワードを入力してください");
+  if(password !== '20200301') return;
   const dbRef = firebase.database().ref();
   const headerArr = [
     "id", 
